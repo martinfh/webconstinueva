@@ -1,0 +1,69 @@
+---
+layout: default
+---
+<!DOCTYPE html>
+<html>
+	<head>	
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<style>
+.mySlides {display:none}
+</style>
+	</head>
+	<body>
+		<div>
+			<div class="boton_atras">
+    <a href="index.html"><img style="float:right;height: 50px;" src="assets/imagenes/flecha_atras.png"></a>
+      </div>
+			<p class="header_artista">
+				Micaela Piñeiro</p>
+		</div>
+		<p style="text-align: right; padding-right: 40px; font-size: 18px;text-decoration: underline;">
+			<a href="assets/imagenes/artistas/PIN%CC%83ERO.pdf" download>
+	    		Descargar<br>
+			CV y Catálogo</a>
+			</p>
+		<p class="header_artista" style="padding-left: 25px;"><i>Selección de obras:</i></p>
+		<div class="row fadeinlargo">
+				<div class= "column">
+					<img class="w3-hover-opacity" style="width: 100%;" onclick="onClick(this)"src="https://scontent.fmex7-2.fna.fbcdn.net/v/t1.0-9/61823131_332326167434427_5851911456404013056_n.jpg?_nc_cat=107&_nc_oc=AQlPT1etd4vMeGwvjZYATcJHC1zwFqNZRGgDadk7bFlmODyq1od6TfNNMR83az_GJfo&_nc_ht=scontent.fmex7-2.fna&oh=4475f311e7b3f30139714a0c3ef3adfb&oe=5DDC1122 ">
+					<img class="w3-hover-opacity" style="width: 100%;" onclick="onClick(this)"src=" ">
+					<img class="w3-hover-opacity" style="width: 100%;" onclick="onClick(this)"src=" ">
+					<img class="w3-hover-opacity" style="width: 100%;" onclick="onClick(this)"src=" ">
+		
+					</div><div class= "column">
+					<img class="w3-hover-opacity" style="width: 100%;" onclick="onClick(this)"src=" https://scontent.fmex7-2.fna.fbcdn.net/v/t1.0-9/61280656_331464700853907_2088395429266849792_n.jpg?_nc_cat=111&_nc_oc=AQk1Ca2MEAGSW3TwlGxi5WcAl7i3LprxArbUiURzyWwBbf5a_JM1qIPVuePpYPRpjqQ&_nc_ht=scontent.fmex7-2.fna&oh=4b0aead902b38f0ea3fe69b74ada0429&oe=5E143EC6">
+					<img class="w3-hover-opacity" style="width: 100%;" onclick="onClick(this)"src=" ">
+					<img class="w3-hover-opacity" style="width: 100%;" onclick="onClick(this)"src=" ">
+					<img class="w3-hover-opacity" style="width: 100%;" onclick="onClick(this)"src=" ">
+
+					</div><div class= "column">
+					<img class="w3-hover-opacity" style="width: 100%;" onclick="onClick(this)"src=" https://scontent.fmex7-2.fna.fbcdn.net/v/t1.0-9/61146270_329813547685689_8568043083562745856_o.jpg?_nc_cat=102&_nc_oc=AQn5RA-f_xRRbgBi47X-iiV1AW9BRao0j5pyLcJbeyURw5VMjICJLI1Qb9N2Y9CmSa0&_nc_ht=scontent.fmex7-2.fna&oh=8c0e6b12e6e27a99b9056613743bc4a1&oe=5DCF76BF">
+					<img class="w3-hover-opacity" style="width: 100%;" onclick="onClick(this)"src=" ">
+					<img class="w3-hover-opacity" style="width: 100%;" onclick="onClick(this)"src=" ">
+					</div><div class= "column">
+					<img class="w3-hover-opacity" style="width: 100%;" onclick="onClick(this)"src=" https://scontent.fmex7-2.fna.fbcdn.net/v/t1.0-9/60067696_324877034846007_8599333213099261952_n.jpg?_nc_cat=106&_nc_oc=AQkvZeWNinGp49cdD3F1XxG9qfOryd-N-7tjEgvqozixdPa3vdJLeeHWwg-v1H94Ny4&_nc_ht=scontent.fmex7-2.fna&oh=ae58b5d25ada7449587af4212de9520e&oe=5DCA9A81">
+					<img class="w3-hover-opacity" style="width: 100%;" onclick="onClick(this)"src=" ">
+					<img class="w3-hover-opacity" style="width: 100%;" onclick="onClick(this)"src=" ">
+	
+					
+					
+				</div>
+				</div>
+				<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+  <div class="w3-modal-content w3-animate-zoom">
+    <img id="img01" style="width:100%">
+  </div>
+</div>
+			
+		 <script>
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+   </script>
+				
+	</body>
+	<footer style="height: 30px;">
+</footer>
+</html>

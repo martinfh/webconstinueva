@@ -1,0 +1,57 @@
+---
+layout: default
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+		<div style = "padding-top:15px; padding-left:15px;">
+			<img  style="height:100px;"src="assets/imagenes/ad_sinfondo.png">
+		</div>
+	</head>
+<body>
+	<div class= "menuinicio fadeinlargo">
+			<p style= "cursor: pointer;" class= "texto_artistxs" onclick="myFunction('Demo1')"> 
+        ARTISTAS</p>
+      <div id="Demo1" style="text-align: left;" class="w3-hide w3-animate-right">
+       <p><a href="cata.html">Catalina Oz</a></p>
+       <p><a href="alfredo.html">Alfredo Dufour</a></p>
+       <p><a href="mica.html">Micaela Piñeiro</a></p>
+       <p><a href="martinfh.html">Martin Farnholc Halley</a></p>
+       <p><a href="carloscima.html">Carlos Cima</a></p>
+       <p><a href="beto.html">Alberto Antonio Romero</a></p>
+       <p><a href="martinfernandez.html">Martin Fernandez</a></p>
+        </div>
+				<p style="margin-top: -10px;">
+				<a class= "texto_muestras"href="muestras.html">Muestras</a>
+			</p>
+			<p style="">
+				<a class= "texto_sobrenos"href="contacto.html">Nosotrxs</a>
+			</p>
+			<p style="">
+			<a class= "texto_ferias"href="ferias.html">Ferias</a>
+			</p>
+			<p style="">
+				<a class= "texto_contacto"href="noticias.html">Noticias</a>
+			</p>
+	</div>
+	<footer>
+	<div id="footer" style="padding-bottom: 80px;">
+		<a href="http://www.instagram.com/_constitucion_/"><img style="height:50px;padding-bottom: 10px;" src="assets/imagenes/botonig.png"></a>
+		&nbsp
+		<a href="http://www.facebook.com/constitucionespacio/"><img style="height:50px;padding-left:5px;padding-bottom: 10px;" src="assets/imagenes/botonfb.png"></a>
+				</div>
+</footer>
+<script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+</body>
+</html>

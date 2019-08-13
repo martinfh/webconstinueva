@@ -1,0 +1,69 @@
+---
+layout: default
+---
+<!DOCTYPE html>
+<html>
+	<head>	
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<style>
+.mySlides {display:none}
+</style>
+	</head>
+	<body>
+		<div>
+			<div class="boton_atras">
+    <a href="index.html"><img style="float:right;height: 50px;" src="assets/imagenes/flecha_atras.png"></a>
+      </div>
+			<p class="header_artista">
+				Carlos Cima</p>
+		</div>
+		<p style="text-align: right; padding-right: 40px; font-size: 18px;text-decoration: underline;">
+			<a href="assets/imagenes/artistas/CARLOS%20CIMA.pdf" download>
+	    		Descargar<br>
+			CV y Catálogo</a>
+			</p>
+		<p class="header_artista" style="padding-left: 25px;"><i>Selección de obras:</i></p>
+		<div class="row fadeinlargo">
+				<div class= "column">
+					<img class="w3-hover-opacity" style="width: 100%;" onclick="onClick(this)"src="https://payload.cargocollective.com/1/23/765291/13494196/CarlosCima018_763.jpg">
+					<img class="w3-hover-opacity" style="width: 100%;" onclick="onClick(this)"src="https://payload.cargocollective.com/1/23/765291/13494196/CarlosCima021_721.jpg">
+					<img class="w3-hover-opacity" style="width: 100%;" onclick="onClick(this)"src="">
+					
+		
+					</div><div class= "column">
+					<img class="w3-hover-opacity" style="width: 100%;" onclick="onClick(this)"src="https://payload.cargocollective.com/1/23/765291/13494196/CarlosCima019_768.jpg">
+					<img class="w3-hover-opacity" style="width: 100%;" onclick="onClick(this)"src="https://payload.cargocollective.com/1/23/765291/13494196/CarlosCima020_748.jpg">
+					<img class="w3-hover-opacity" style="width: 100%;" onclick="onClick(this)"src=" ">
+
+					</div><div class= "column">
+					<img class="w3-hover-opacity" style="width: 100%;" onclick="onClick(this)"src="https://payload.cargocollective.com/1/23/765291/13494196/CarlosCima005_1_1024.jpg">
+					<img class="w3-hover-opacity" style="width: 100%;" onclick="onClick(this)"src=" ">
+					<img class="w3-hover-opacity" style="width: 100%;" onclick="onClick(this)"src=" ">
+					
+					</div><div class= "column">
+					<img class="w3-hover-opacity" style="width: 100%;" onclick="onClick(this)"src=" ">
+					<img class="w3-hover-opacity" style="width: 100%;" onclick="onClick(this)"src=" ">
+					<img class="w3-hover-opacity" style="width: 100%;" onclick="onClick(this)"src=" ">
+	
+					
+					
+				</div>
+				</div>
+				<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+  <div class="w3-modal-content w3-animate-zoom">
+    <img id="img01" style="width:100%">
+  </div>
+</div>
+			
+		 <script>
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+   </script>
+				
+	</body>
+	<footer style="height: 30px;">
+</footer>
+</html>

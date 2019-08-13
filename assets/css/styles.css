@@ -1,0 +1,451 @@
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.imagen_feria {
+    padding-left: 20px; 
+    object-fit: contain;
+}
+
+.contenedor_noticias{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+ }
+
+.cuerpo_noticias {
+    display: flex;
+    width: 50%;
+    font-size: 15px;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 35px;
+    padding-top: 35px;
+    border-right: 2px solid white;
+    border-collapse: separate;
+    border-spacing: 15px;
+    flex-direction: row;
+
+ }
+.foto_noticias {
+    display: flex;
+    width: 50%;
+    font-size: 25px;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    padding:35px;
+}
+
+.cuadro_ferias {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    font-size: 25px;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+
+}
+ .contenedor_forms {
+    padding-left: 50px;
+    padding-top: 40px;
+    color: black;
+ }
+ .letra_consti {
+    position: absolute;
+    float: left;
+    z-index: 3;
+    padding-left: 80px;
+    padding-top: 300px;
+ }
+ .contenedor_sobrenosotros {
+    position: absolute;
+    z-index: 2;
+    float: left;
+    width: 60%;
+    color: white;
+    padding-left: 200px;
+    padding-top: 26px;
+
+}
+.foto_frenteconsti {
+    float: right;
+    width: 400px;
+    position: absolute;
+    z-index: 1;
+    padding-left: 170px;
+}
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    float: right;
+    text-align: right;
+    color: black;
+    padding-bottom: 40px;
+    padding-right: 40px;
+}
+.visordeimagenes{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.caja_contacto{
+    display: flex;
+    position: absolute;
+    z-index: 4;
+    width: 600px;
+    padding-top: 300px;
+    padding-left: 750px;
+    text-align:right;
+    color: white;
+
+}
+.cuerpo_contacto{
+  font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    text-decoration: none;
+     background-color: rgba(86, 86, 86, 0.8);
+     padding: 35px;
+     padding-left: 100px;
+     color: white;
+
+}
+ .header_contacto{
+    display: grid;
+    grid-template-columns: 50%,50%;
+    grid-template-areas: "vacio atras"
+ }
+
+ .atras{
+    grid-area: atras;
+    text-align: right;
+ }
+
+
+
+.containerTab {
+  padding: 20px;
+  color: black;
+}
+
+/* Clear floats after the columns */
+
+
+/* Closable button inside the image */
+.closebtn {
+  float: right;
+  color: black;
+  font-size: 35px;
+  cursor: pointer;
+}
+.contenedor_muestras{
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    font-size: 25px;
+    padding-left: 30px;
+ }
+
+ .contenedor_textosala{
+    flex: left;
+    width: 50%;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+    padding-left: 30px;
+ }
+
+.header_contacto{
+    text-align: right;
+}
+
+.boton_atras{
+    text-align: right;   
+}
+ .header_artista{
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    text-decoration: none;
+ }
+
+ .cuerpo_artistxs{
+    color: black;
+    flex: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-align: justify;
+    width: 70%;
+    padding-right: 60px;
+    padding-left: 30px;
+ }
+ 
+.field{
+    color:black;
+}
+
+ /* unvisited link */
+a.links_artistxs:link {
+    color: black;
+}
+
+/* visited link */
+a.links_artistxs:visited {
+    color: black;
+}
+
+/* mouse over link */
+a.links_artistxs:hover {
+    color: black;
+    font-size: 21px;
+ background: none;
+}
+
+/* selected link */
+a.links_artistxs:active {
+    color: black;
+}
+a:link {
+    color: black;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    color: clak;
+    font-size: 21px;
+ background: none;
+}
+
+/* selected link */
+a:active {
+    color: white;
+}
+ a{
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    color: #fff;
+ }
+
+ .texto_artistxs:hover {
+    color: black;
+    font-size: 21px;
+ background: none;
+}
+ .fadeinlargo{
+animation: fadein 2s;
+ }
+
+ .fadeoutlargo{
+animation: fadeout 2s;
+ }
+ @keyframes fadeinlargo{
+    from {opacity:0;}
+    to {opacity:1;}
+}
+@keyframes fadeoutlargo{
+    from {opacity:1;}
+    to {opacity:0;}
+}
+
+ .fadein{
+animation: fadein 1s;
+ }
+
+ .fadeout{
+animation: fadeout 1s;
+ }
+@keyframes fadein{
+    from {opacity:0;}
+    to {opacity:1;}
+}
+@keyframes fadeout{
+    from {opacity:1;}
+    to {opacity:0;}
+}
+.texto_muestras{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-family: 'Merriwheather', serif;
+    font-weight: lighter;
+    font-size: 20px;
+}
+.recuadro_muestras{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 50%;
+    border: 1px;
+    border-style: solid;
+    padding: 10px;
+    font-size:20px;
+    text-align: right;
+    text-decoration: none;
+}
+.muestras{
+    font-size:20px;
+    text-align: left;
+    width: auto;
+    text-decoration: none;
+}
+.muestras:hover {
+    font-size:21px;
+    color:grey;
+    text-align: left;
+    width: auto;
+    text-decoration: none;
+
+}
+.texto_sobrenos {
+    font-size: 20px;
+    color:#FFFFFF;
+    text-decoration: none;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+
+}
+.texto_ferias {
+    font-size: 20px;
+    color:#FFFFFF;
+    text-decoration: none;
+    text-align: left;
+    font-family: "Times New Roman", Times, serif;
+    font-style:italic;
+    
+}
+
+.texto_artistxs {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    /*text-shadow: 2px 1px 10px rgba(0, 0, 0, 0.50);*/
+}
+.texto_muestras {
+    font-size: 20px;
+    color:white;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+}
+.texto_contacto {
+    font-size: 20px;
+    color:white;
+    text-decoration: none;
+    text-align: left;
+    font-family: 'Roboto Slab', serif;
+    font-weight: lighter;
+}
+.texto_contenedor_sobrenos{
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-align: justify;
+    padding: 50px;
+    background-color: rgba(86, 86, 86, 0.8);
+}
+.menuinicio {
+    padding: 100px;
+    float:center;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    height: auto;
+    text-decoration: none;
+    
+}
+.background {
+background: url("http://api.thumbr.it/whitenoise-361x370.png?background=FFFFFF&noise=1c011c&density=30&opacity=10")
+ /*background: rgb(2,0,36);
+    background: -webkit-linear-gradient(left, rgba(2,0,36,1) 0%, rgba(89,41,92,1) 0%, rgba(4,50,25,1) 29%, rgba(0,0,0,1) 100%);
+    background: -o-linear-gradient(left, rgba(2,0,36,1) 0%, rgba(89,41,92,1) 0%, rgba(4,50,25,1) 29%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(to right, rgba(2,0,36,1) 0%, rgba(89,41,92,1) 0%, rgba(4,50,25,1) 29%, rgba(0,0,0,1) 100%);
+*/
+}
+* {box-sizing: border-box}
+
+/* Style the tab */
+.tab {
+    color: black;
+    font-size: 20px;
+    float: left;
+    border: 1px solid #ccc;
+    width: 30%;
+    height: auto;
+    text-decoration: none;
+}
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    font-family: sans-serif, helvetica;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    display: block;
+    background-color: inherit;
+    color: red;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: crosshair;
+    transition: 0.3s;
+}
